@@ -13,7 +13,8 @@
 依赖软件:
 maxwell,
 kafka,
-python 3.6以上版本,python包elasticsearch,kafka
+mongodb
+python 3.6以上版本,python包elasticsearch,kafka,pymongo
 
 配置:
  在settings.py中
@@ -27,6 +28,10 @@ python 3.6以上版本,python包elasticsearch,kafka
  #定义elasticearch服务器信息,ip:port
  ESIP="10.0.0.3:9202"     
  
+ #定义mongodb,用来保存上一次开始的位置
+    MONGO_IP="10.0.0.2"
+    MONGO_PORT=27017
+    MONGO_DB = "mysql2es"
  
  
  版权所有: oraclefrankzou, 联系方式: 327356330
